@@ -1,1 +1,3 @@
 # projetos_estudo
+
+Repositório com projetos feitos para estudar assuntos ...
