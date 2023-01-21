@@ -21,7 +21,7 @@ df_pais_marca, df = get_data()
 
 
 " # Dashboard Celulares Amazon "
-st.text('Ctrl + Scroll do mouse para ajustar a página ao tamanho da sua tela')
+st.text('Ctrl + Scroll do mouse para ajustar a página ao tamanho de sua tela')
 st.sidebar.markdown(' ## Dashboard dos dados dos celulares mais vendidos no site da Amazon brasil, o ranking vai do 1º celular mais vendido para o menos vendido, \
 os dados foram coletados dia 20/01/2023.  \n')
 st.sidebar.markdown(' ***Se você quiser rodar o script para coletar os dados e gerar um dashboard igual ao que você está vendo na página*** com os \
