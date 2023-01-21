@@ -24,7 +24,7 @@ df_pais_marca, df = get_data()
 st.markdown('Ctrl + Scroll do mouse para ajustar a página ao tamanho de sua tela')
 st.sidebar.markdown(' ## Dashboard dos dados dos celulares mais vendidos no site da Amazon brasil, o ranking vai do 1º celular mais vendido para o menos vendido, \
 os dados foram coletados dia 20/01/2023.  \n')
-st.sidebar.markdown(' ***Se você quiser rodar o script para coletar os dados e gerar um dashboard igual ao que você está vendo na página*** com os \
+st.sidebar.markdown(' ## ***Se você quiser rodar o script para coletar os dados e gerar um dashboard igual ao que você está vendo na página*** com os \
 dados de hoje ***de forma automatizada*** você pode seguir as ***instruções da pagina do projeto no github:*** https://shre.ink/1WtH  \n Se por algum motivo quiser entrar em ***contato*** comigo ou tiver alguma sugestão ***pode me enviar um e-mail:*** gabbe2.718@gmail.com ')
 
 
@@ -132,6 +132,6 @@ st.title('Dados faltantes')
 st.table(df.isnull().sum()[7:])
 st.table(df[df == 0].count(axis=0)[5:8])
 st.table(df[df == '0'].count(axis=0)[7:9])
-st.markdown(" ***Observação em relação aos dados faltantes*** algumas descrições do site da Amazon não mencionam o nome da marca, apenas o modelo do celular e acabam 'burlando' o método que usado pelo script para coletar as marcas, o mesmo ocorre no ram e rom, e em alguns casos não temos os dados disponíveis para coletar pelo site, neste caso os dados ausentes são ignorados da visualização e no caso de ser numérico são preenchidos por zero  automaticamente para não atrapalhar a visualização.")
+st.markdown(" ## ***Observação em relação aos dados faltantes*** algumas descrições do site da Amazon não mencionam o nome da marca, apenas o modelo do celular e acabam 'burlando' o método que usado pelo script para coletar as marcas, o mesmo ocorre no ram e rom, e em alguns casos não temos os dados disponíveis para coletar pelo site, neste caso os dados ausentes são ignorados da visualização e no caso de ser numérico são preenchidos por zero  automaticamente para não atrapalhar a visualização.")
 
 
