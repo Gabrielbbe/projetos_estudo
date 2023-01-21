@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide" )
 
 def get_data():
-    df_pais_marca = pd.read_excel('Gabrielbbe/projetos_estudo/Amazon_webscraping_dashboard/marca_pais.xlsx')
+    df_pais_marca = pd.read_excel('/marca_pais.xlsx')
     df = pd.read_excel('df_final.xlsx')
     return df_pais_marca, df
 
