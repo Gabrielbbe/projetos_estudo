@@ -4,9 +4,9 @@
 ## Requisitos: 
 - Ter o python3 instalado em seu computador  
 - Tenha o Navegador Firefox instalado na sua máquina.  
-- Instalar os requirements, via terminal pelo comando: <code>pip3 install -r requirements.txt </code>  \n
+- Instalar os requirements, via terminal pelo comando: <code>pip3 install -r requirements.txt </code>  
 
- Baixe este repositório na sua máquina, e siga os passos.
+ Baixe este repositório na sua máquina, abra a pasta onde baixou o repositório via terminal e siga os passos.
 ## Primeiro passo: 
 - Rode o script "script_webscraping_amazon.py" via terminal pelo comando <code> python3 script_webscraping_amazon.py </code>
 esse passo é o mais demorado, ele vai terminal quando criar um arquivo excel com o nome 'info_amazon.xlsx'
