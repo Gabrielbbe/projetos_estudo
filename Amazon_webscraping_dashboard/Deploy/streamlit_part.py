@@ -126,7 +126,7 @@ with st.container():
              2ª coluna porcentagem de celulares com aquele armazenamento em relação ao total de celulares')
 
 st.markdown('#### Colocamos os valores das variáveis em relação ao ranking para verificarmos se existe algum padrão em relação as variáveis e o ranking, \
-que seria do celular mais vendido ao menos, no caso não detectamos nenhum padrão relevante, apenas de que o preço varia de acordo com a marca o que não era uma novidade')
+que seria do celular mais vendido ao menos')
 
 st.title('Dados faltantes')
 st.table(df.isnull().sum()[7:])
