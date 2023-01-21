@@ -22,8 +22,8 @@ df_pais_marca, df = get_data()
 
 " # Dashboard Celulares Amazon "
 
-st.sidebar.markdown(' ##  Dashboard dos dados dos celulares mais vendidos no site da Amazon brasil, o ranking vai do 1º celular mais vendido para o menos  vendido, os dados foram coletados dia 20/01/2023. \n Se você quiser rodar o script para coletar os dados e gerar um dashboard igual ao que você está vendo na página com os dados de hoje automaticamente \
-você pode seguir as instruções da pagina do projeto no github: https://github.com/Gabrielbbe/projetos_estudo/tree/main/Amazon_webscraping_dashboard/Scripts \n \
+st.sidebar.markdown(' ##  Dashboard dos dados dos celulares mais vendidos no site da Amazon brasil, o ranking vai do 1º celular mais vendido para o menos vendido, os dados foram coletados dia 20/01/2023. \n Se você quiser rodar o script para coletar os dados e gerar um dashboard igual ao que você está vendo na página com os dados de hoje automaticamente \
+você pode seguir as instruções da pagina do projeto no github: https://github.com/Gabrielbbe/projetos_estudo/tree/main/Amazon_webscraping_dashboard/Scripts \n
 Se por algum motivo quiser entrar em contato comigo ou tiver alguma sugestão pode me enviar um e-mail: gabbe2.718@gmail.com ')
 
 
