@@ -7,9 +7,13 @@ st.set_page_config(
     page_icon = " 📊 " ,
     layout="wide" )
 
+path = os.path.dirname(__file__)
+path_mp = path+'/marca_pais.xlsx'
+path_df = path+'/df_final.xlsx'
+
 def get_data():
-    df_pais_marca = pd.read_excel('marca_pais.xlsx')
-    df = pd.read_excel('df_final.xlsx')
+    df_pais_marca = pd.read_excel(path_mp)
+    df = pd.read_excel(path_df)
     return df_pais_marca, df
 
 df_pais_marca, df = get_data()
