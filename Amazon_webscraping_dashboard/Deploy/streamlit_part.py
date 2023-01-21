@@ -125,13 +125,13 @@ with st.container():
         st.markdown(' 1ª coluna indica o armazenamento \
              2ª coluna porcentagem de celulares com aquele armazenamento em relação ao total de celulares')
 
-st.markdown('Colocamos os valores das variáveis em relação ao ranking para verificarmos se existe algum padrão em relação as variáveis e o ranking, \
+st.markdown('#### Colocamos os valores das variáveis em relação ao ranking para verificarmos se existe algum padrão em relação as variáveis e o ranking, \
 que seria do celular mais vendido ao menos, no caso não detectamos nenhum padrão relevante, apenas de que o preço varia de acordo com a marca o que não era uma novidade')
 
 st.title('Dados faltantes')
 st.table(df.isnull().sum()[7:])
 st.table(df[df == 0].count(axis=0)[5:8])
 st.table(df[df == '0'].count(axis=0)[7:9])
-st.markdown(" ## ***Observação em relação aos dados faltantes*** algumas descrições do site da Amazon não mencionam o nome da marca, apenas o modelo do celular e acabam 'burlando' o método que usado pelo script para coletar as marcas, o mesmo ocorre no ram e rom, e em alguns casos não temos os dados disponíveis para coletar pelo site, neste caso os dados ausentes são ignorados da visualização e no caso de ser numérico são preenchidos por zero  automaticamente para não atrapalhar a visualização.")
+st.markdown(" #### ***Observação em relação aos dados faltantes*** algumas descrições do site da Amazon não mencionam o nome da marca, apenas o modelo do celular e acabam 'burlando' o método que usado pelo script para coletar as marcas, o mesmo ocorre no ram e rom, e em alguns casos não temos os dados disponíveis para coletar pelo site, neste caso os dados ausentes são ignorados da visualização e no caso de ser numérico são preenchidos por zero  automaticamente para não atrapalhar a visualização.")
 
 
