@@ -12,7 +12,7 @@
 esse passo é o mais demorado(1 - 2 minutos), ele vai terminar quando criar um arquivo excel com o nome 'info_amazon.xlsx'
  
 ## Então seguimos para o segundo passo:
-- Rode o script "script_estrutura.py" com o comando <code> python3 script_estrutura.py </code> ele estrutura os dados coletados e extrais alguma informações que queremos dos dados coletados.
+- Rode o script "script_estrutura.py" com o comando <code> python3 script_estrutura.py </code> ele estrutura os dados coletados e extrai alguma informações que queremos dos dados coletados.
  
 ## Terceito e último passo:
 - Rode o script "streamlit_part.py" com o comando <code> python3 streamlit_part.py </code>, após rodar esse comando ele deve automaticamente abrir o seu navegador padrão e mostrar o dashboard.
