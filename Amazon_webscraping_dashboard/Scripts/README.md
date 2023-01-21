@@ -9,7 +9,7 @@
  Baixe este repositório na sua máquina, abra a pasta onde baixou o repositório via terminal e siga os passos.
 ## Primeiro passo: 
 - Rode o script "script_webscraping_amazon.py" via terminal pelo comando <code> python3 script_webscraping_amazon.py </code>
-esse passo é o mais demorado, ele vai terminal quando criar um arquivo excel com o nome 'info_amazon.xlsx'
+esse passo é o mais demorado(1 - 2 minutos), ele vai terminar quando criar um arquivo excel com o nome 'info_amazon.xlsx'
  
 ## Então seguimos para o segundo passo:
 - Rode o script "script_estrutura.py" com o comando <code> python3 script_estrutura.py </code> ele estrutura os dados coletados e extrais alguma informações que queremos dos dados coletados.
