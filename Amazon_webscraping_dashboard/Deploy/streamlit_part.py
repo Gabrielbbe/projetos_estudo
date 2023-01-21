@@ -21,7 +21,7 @@ df_pais_marca, df = get_data()
 
 
 " # Dashboard Celulares Amazon "
-st.text('Ctrl + Scroll do mouse para ajustar a página ao tamanho de sua tela')
+st.markdown('Ctrl + Scroll do mouse para ajustar a página ao tamanho de sua tela')
 st.sidebar.markdown(' ## Dashboard dos dados dos celulares mais vendidos no site da Amazon brasil, o ranking vai do 1º celular mais vendido para o menos vendido, \
 os dados foram coletados dia 20/01/2023.  \n')
 st.sidebar.markdown(' ***Se você quiser rodar o script para coletar os dados e gerar um dashboard igual ao que você está vendo na página*** com os \
@@ -116,6 +116,8 @@ with st.container():
 
     with col1:
         st.plotly_chart(fig_ram,use_container_width=True)
+        st.markdown('Colocamos os valores das variáveis em relação ao ranking para verificarmos algum padrão em relação a variáveis e o ranking \
+que seria do celular mais vendido ao menos, no caso não detectamos nenhum padrão relevante, apenas de que o preço varia de acordo com a marca o que não era uma novidade')
         st.table(table_ram[1:])
         st.markdown('1ª coluna indica a Ram  2ª coluna porcentagem de celulares com aquela quantidade de ram em relação ao total de celulares')
 
