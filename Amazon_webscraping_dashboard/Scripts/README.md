@@ -1,9 +1,10 @@
- <h1> Scrips que rodam o projeto automaticamente na máquina local </h1>
+ 
+# Scrips que rodam o projeto automaticamente na máquina local </h1>
 
-<h2> Requisitos: </h2>
-- &nbsp; Ter o python3 instalado em seu computador  
-- &nbsp; Tenha o Navegador Firefox instalado na sua máquina.  
-- &nbsp; Instalar os requirements, via terminal pelo comando: <code>pip3 install -r requirements.txt </code>  \n
+## Requisitos: 
+- Ter o python3 instalado em seu computador  
+- Tenha o Navegador Firefox instalado na sua máquina.  
+- Instalar os requirements, via terminal pelo comando: <code>pip3 install -r requirements.txt </code>  \n
 
 &nbsp; Baixe este repositório na sua máquina, e siga os passos.
 &nbsp; Primeiro passo: 
