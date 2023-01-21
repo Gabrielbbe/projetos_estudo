@@ -116,8 +116,6 @@ with st.container():
 
     with col1:
         st.plotly_chart(fig_ram,use_container_width=True)
-        st.markdown('Colocamos os valores das variáveis em relação ao ranking para verificarmos algum padrão em relação a variáveis e o ranking \
-que seria do celular mais vendido ao menos, no caso não detectamos nenhum padrão relevante, apenas de que o preço varia de acordo com a marca o que não era uma novidade')
         st.table(table_ram[1:])
         st.markdown('1ª coluna indica a Ram  2ª coluna porcentagem de celulares com aquela quantidade de ram em relação ao total de celulares')
 
@@ -126,6 +124,9 @@ que seria do celular mais vendido ao menos, no caso não detectamos nenhum padr�
         st.table(table_rom[1:])
         st.markdown(' 1ª coluna indica o armazenamento \
              2ª coluna porcentagem de celulares com aquele armazenamento em relação ao total de celulares')
+
+st.markdown('Colocamos os valores das variáveis em relação ao ranking para verificarmos algum padrão em relação a variáveis e o ranking \
+que seria do celular mais vendido ao menos, no caso não detectamos nenhum padrão relevante, apenas de que o preço varia de acordo com a marca o que não era uma novidade')
 
 st.title('Dados faltantes')
 st.table(df.isnull().sum()[7:])
