@@ -77,7 +77,7 @@ rom_zero =  df[df['rom']=='0'].count()
 df['ram'] = df['ram'].map(str)
 
 table_rom = df.groupby('rom')['rom'].count()
-table_rom = table_rom.transform(lambda x: 100 * x/(149-rom_zero['rom']))
+table_rom = table_rom.transform(lambda x: 100 * x/(len(df['rom'])-rom_zero['rom']))
 
 
 #st.table(table_rom[1:])
@@ -88,7 +88,7 @@ df['ram'] = df['ram'].map(str)
 ram_zero =  df[df['ram']=='0'].count()
 
 table_ram = df.groupby('ram')['ram'].count()
-table_ram = table_ram.transform(lambda x: 100 * x/(149-ram_zero['ram']))
+table_ram = table_ram.transform(lambda x: 100 * x/(len(df['ram'])-ram_zero['ram']))
 
 
 #st.table(table_ram[1:])
