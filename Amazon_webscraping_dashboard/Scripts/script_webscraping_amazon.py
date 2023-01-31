@@ -56,7 +56,7 @@ def coletar_dados_celulares(url = str()):
 df = []
 # link, muda apenas o numero no final.
 link = 'https://www.amazon.com.br/gp/bestsellers/electronics/16243890011/ref=zg_bs_pg_1?ie=UTF8&pg='
-for i in range(1,4):
+for i in range(1,3):
     a = coletar_dados_celulares((link+'%d')% i )
     df.append(a)
 df=pd.concat(df)
