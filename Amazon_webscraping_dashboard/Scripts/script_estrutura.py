@@ -37,6 +37,7 @@ for i in range(len(df['stars'])):
     
     df.loc[i,'stars'] = df.loc[i,'stars'][0:3]
     df.loc[i,'stars'] = df.loc[i,'stars'].replace(',','.')
+    df.loc[i,'n_avalicoes'] = str(df.loc[i,'n_avalicoes'])
     if '$' in df.loc[i,'n_avalicoes']:
          df.loc[i,'preco'] = df.loc[i,'n_avalicoes'] # as vezes não tem o n_avaliacao e ele adiciona o preço no lugar
          df.loc[i,'n_avalicoes'] = 0 
@@ -70,7 +71,7 @@ GB = pd.DataFrame(columns=['ram','rom']) # vai ter duas colunas, ram e rom
 ind = 0
 for i in df['info']:
     #print(ind)
-    linha = ram_armz(extrair_gb(df['info'][ind].upper())) # lista com sub-listas.
+    linha = ram_armz(extrair_gb(str(df['info'][ind]).upper())) # lista com sub-listas.
     numeros = []
 
     for j in linha:
@@ -133,7 +134,7 @@ def marca_dois(linha):
 coluna_marca2 = pd.DataFrame(columns=['marca','pais'])
 ind = 0
 for i in df['info']:
-    m_linha = marca_dois( df['info'][ind].upper() )
+    m_linha = marca_dois( str(df['info'][ind]).upper() )
     #print(m_linha)
     coluna_marca2.loc[ind,'marca']= m_linha[0]
     #df.loc[ind,'info']=m_linha[1] # remove a marca da string para deixar ela mais limpa.
